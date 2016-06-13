@@ -27,25 +27,10 @@ Conociendo Javascript y sus técnicas básicas de programación
 
 #### Variables
 
-```ruby
-class Article < ActiveRecord::Base
-	belongs_to :author
-end
+En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
+[Variables y tipos](https://www.google.com.mx/?ion=1&espv=2#q=definici%C3%B3n+de+una+variable+programacion)
 
-class Author < ActiveRecord::Base
-	has_many :articles
-	has_one :personal_information
-end
-
-class PersonalInformation < ActiveRecord::Base
-	belongs_to :author
-end
-
-=> article.author.personal_information.name
-=> article.author.personal_information.birthdate
-=> article.author.personal_information.gender
-=> article.author.personal_information.city
-=> article.author.personal_information.last_name
+```javascript
 ```
 
 #### Operadores
