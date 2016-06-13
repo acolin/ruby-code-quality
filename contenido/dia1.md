@@ -53,26 +53,31 @@ Tipos de Variables:
   object ( { name: 'juan', email: 'ramirez' } )
 **/
 
+// null & undefined
 var imUndefined;
 var imNull = null;
 console.log(imUndefined);
 console.log(imNull);
 
+// booleans
 var imTrue = true;
 var imFalse = false;
 console.log(imTrue);
 console.log(imFalse);
 
+// numbers
 var imANumber = 2;
 var imANumberToo = 10.40;
 console.log(imANumber);
 console.log(imANumberToo);
 
+// strings
 var imAString = 'Im a string';
 var imAStringToo = "Im a string";
 console.log(imAString);
 console.log(imAStringToo);
 
+// objects
 var imAnObject = {
   name: 'Juan',
   email: 'juan@gmail.com',
