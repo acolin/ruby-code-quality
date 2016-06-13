@@ -25,6 +25,11 @@ Conociendo Javascript y sus técnicas básicas de programación
 * En 2014 con el nacimiento de HTML5 se habilita el control de multimedia, web sockets para comunicación en tiempo real entre otros.
 * Para el 2015 nace ECMAScript 6, que adhiere muchos elementos de programación orientada a objetos y facilita la programación asíncrona.
 
+### Estructura de un programa en Javascript
+
+```javascript
+```
+
 #### Variables
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
@@ -37,59 +42,49 @@ var totalCost;
 // Declaración y asignación
 var email = 'rodriguezcolin@gmail.com';
 var totalCost = 150.10;
+
+/**
+Tipos de Variables:
+  null
+  undefined
+  boolean (true, false)
+  number (1, 2.1, 2.20)
+  string ('my name', "my name")
+  object ( { name: 'juan', email: 'ramirez' } )
+**/
+
+var imUndefined;
+var imNull = null;
+console.log(imUndefined);
+console.log(imNull);
+
+var imTrue = true;
+var imFalse = false;
+console.log(imTrue);
+console.log(imFalse);
+
+var imANumber = 2;
+var imANumberToo = 10.40;
+console.log(imANumber);
+console.log(imANumberToo);
+
+var imAString = 'Im a string';
+var imAStringToo = "Im a string";
+console.log(imAString);
+console.log(imAStringToo);
+
+var imAnObject = {
+  name: 'Juan',
+  email: 'juan@gmail.com',
+  age: 15,
+  iKnowJS: false
+};
+console.log(imAnObject);
 ```
 
 #### Operadores
 
-```ruby
-class Author < ActiveRecord::Base
-	has_many :articles
-	has_one :personal_information
-	
-	def name
-		personal_information.name
-	end
-	
-	def birthdate
-		personal_information.birthdate
-	end
-	
-	def gender
-		personal_information.gender
-	end
-	
-	def city
-		personal_information.city
-	end
-	
-	def last_name
-		personal_information.last_name
-	end
-end
-
-class Article < ActiveRecord::Base
-	belongs_to :author
-	
-	def author_name
-		author.name
-	end
-	
-	def author_birthdate
-		author.birthdate
-	end
-	
-	def author_gender
-		author.gender
-	end
-	
-	def author_city
-		author.city
-	end
-	
-	def author_last_name
-		author.last_name
-	end
-end
+```javascript
 ```
 
 #### Condicionales
