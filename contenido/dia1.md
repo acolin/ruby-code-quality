@@ -214,6 +214,7 @@ function plusTen(number) {
 }
 
 plusTen(11);
+
 // Modificando un parametro externo
 var total;
 
