@@ -174,19 +174,28 @@ switch name {
 ```
 
 ### Ciclos
+```javascript
 
-In software engineering, the active record pattern is an architectural pattern found in software that stores in-memory object data in relational databases. It was named by Martin Fowler in his 2003 book Patterns of Enterprise Application Architecture.[1] The interface of an object conforming to this pattern would include functions such as Insert, Update, and Delete, plus properties that correspond more or less directly to the columns in the underlying database table.
+// While
+var i = 0;
+while (i < 10) {
+    console.log("The number is " + i);
+    i++;
+}
 
-The active record pattern is an approach to accessing data in a database. A database table or view is wrapped into a class. Thus, an object instance is tied to a single row in the table. After creation of an object, a new row is added to the table upon save. Any object loaded gets its information from the database. When an object is updated the corresponding row in the table is also updated. The wrapper class implements accessor methods or properties for each column in the table or view.
+// Do While
+var i = 0;
+do {
+    console.log("The number is " + i);
+    i++;
+}
+while (i < 10);
 
-#### Example
-
-```ruby
-class User < ActiveRecord::Base
-end
+// For
+for (i = 0; i < 5; i++) {
+    console.log("The number is " + i);
+}
 ```
-
-[Code](active_record)
 
 ### Funciones
 
