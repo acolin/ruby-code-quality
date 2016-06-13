@@ -201,12 +201,12 @@ for (i = 0; i < 5; i++) {
 
 ```javascript
 
-// Sin parametros
+// Sin parametros, sin retorno
 function sayHi() {
   alert('hi');
 }
 
-// Con parametros
+// Con parametros y retorno
 function plusTen(number) {
   return number + 10;
 }
