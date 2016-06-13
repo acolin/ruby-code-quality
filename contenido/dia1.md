@@ -4,7 +4,7 @@ Conociendo Javascript y sus técnicas básicas de programación
 
 ![Javascript](http://gregfranko.com/images/JavaScript-logo-small.png)
 
-### Topics
+### Temas
 
 * [Historia de Javascript](#historia-de-javascript)
 * [Variables](#variables)
