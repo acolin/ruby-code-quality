@@ -6,12 +6,12 @@ Conociendo Javascript y sus técnicas básicas de programación
 
 ### Topics
 
-* [Historia de Javascript](#law-of-demeter)
-* [Variables](#activerecord)
-* [Operadores](#presenters)
-* [Condicionales](#single-responsibility-principle)
-* [Ciclos](#null-object-pattern)
-* [Funciones](#factory)
+* [Historia de Javascript](#historia-de-javascript)
+* [Variables](#variables)
+* [Operadores](#operadores)
+* [Condicionales](#condicionales)
+* [Ciclos](#ciclos)
+* [Funciones](#funciones)
 
 --
 
@@ -132,6 +132,7 @@ Tipos:
 ```
 
 #### Condicionales
+Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros programas.
 
 ```javascript
 // if
@@ -174,8 +175,9 @@ switch name {
 ```
 
 ### Ciclos
-```javascript
+Nos ayudan a realizar operaciones repetitivas sobre sets de datos.
 
+```javascript
 // While
 var i = 0;
 while (i < 10) {
@@ -198,9 +200,9 @@ for (i = 0; i < 5; i++) {
 ```
 
 ### Funciones
+Es la forma más básica de abstracción y reutilización de nuestro código.
 
 ```javascript
-
 // Sin parametros, sin retorno
 function sayHi() {
   alert('hi');
