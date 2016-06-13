@@ -25,11 +25,6 @@ Conociendo Javascript y sus técnicas básicas de programación
 * En 2014 con el nacimiento de HTML5 se habilita el control de multimedia, web sockets para comunicación en tiempo real entre otros.
 * Para el 2015 nace ECMAScript 6, que adhiere muchos elementos de programación orientada a objetos y facilita la programación asíncrona.
 
-### Estructura de un programa en Javascript
-
-```javascript
-```
-
 #### Variables
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
@@ -51,31 +46,24 @@ Tipos de Variables:
   number (1, 2.1, 2.20)
   string ('my name', "my name")
   object ( { name: 'juan', email: 'ramirez' } )
+  array [1, 'hello', false]
 **/
 
 // null & undefined
 var imUndefined;
 var imNull = null;
-console.log(imUndefined);
-console.log(imNull);
 
 // booleans
 var imTrue = true;
 var imFalse = false;
-console.log(imTrue);
-console.log(imFalse);
 
 // numbers
 var imANumber = 2;
 var imANumberToo = 10.40;
-console.log(imANumber);
-console.log(imANumberToo);
 
 // strings
 var imAString = 'Im a string';
 var imAStringToo = "Im a string";
-console.log(imAString);
-console.log(imAStringToo);
 
 // objects
 var imAnObject = {
@@ -84,12 +72,63 @@ var imAnObject = {
   age: 15,
   iKnowJS: false
 };
-console.log(imAnObject);
+
+// arrays
+var myArr = [
+  1,
+  'hello',
+  false
+];
 ```
 
 #### Operadores
 
+##### Aritméticos
+
 ```javascript
+/**
+Tipos:
+  + (suma)
+  - (resta)
+  / (división)
+  * (multiplicación)
+  % (residuo/mod)
+**/
+
+100 + 10 * 20;
+10 / 20 - 5;
+10 / 20 * 5;
+20 % 2;
+
+// Agrupar para definir precedencias
+(100 + 10) * 20;
+10 / (20 - 5);
+```
+
+#### Booleanos
+```javascript
+/**
+Tipos:
+  > (mayor que)
+  < (menor que)
+  >= (mayor igual)
+  <= (menor igual)
+  == (igual valor)
+  === (igual valor y tipo)
+  ! (negación)
+  != (diferente valor)
+  !== (diferente valor y tipo)
+  && (and)
+  || (or)
+**/
+
+10 > 5;
+10.5 < 30;
+50 >= '50';
+!false && true;
+'10' === 10;
+10 <= 5 || !true && false;
+
 ```
 
 #### Condicionales
