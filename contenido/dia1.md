@@ -28,9 +28,15 @@ Conociendo Javascript y sus técnicas básicas de programación
 #### Variables
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
-[Variables y tipos](https://www.google.com.mx/?ion=1&espv=2#q=definici%C3%B3n+de+una+variable+programacion)
 
 ```javascript
+// Declaración básica de una variable
+var email;
+var totalCost;
+
+// Declaración y asignación
+var email = 'rodriguezcolin@gmail.com';
+var totalCost = 150.10;
 ```
 
 #### Operadores
