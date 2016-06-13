@@ -17,13 +17,13 @@ Conociendo Javascript y sus técnicas básicas de programación
 
 ### Historia de Javascript
 
-The Law of Demeter (LoD) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed at Northeastern University towards the end of 1987, and can be succinctly summarized in each of the following ways:[1]
-
-* Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
-* Each unit should only talk to its friends; don't talk to strangers.
-* Only talk to your immediate friends.
-
-The fundamental notion is that a given object should assume as little as possible about the structure or properties of anything else (including its subcomponents), in accordance with the principle of "information hiding".
+* Creado por Brendan Eich en 1995, en tan solo 10 días, en ese entonces trabajaba en Netscape ahora en Mozilla.
+* Para 1997 Javascript fue llevado a ECMA para crear un estándar de tal forma que los otros browsers pudieran utilizarlo.
+* A través de un paper de Jesse James Garrett nace Ajax, un conjunto de tecnologías que permite cargar información sin la necesidad de un 'full page reload', gracias a esto surgen librerias como Prototype, jQuery, Dojo & Mootools.
+* En 2009 surge ECMAScript 5 conocido como Harmony, actual estándar en los browsers.
+* Para 2009 nace Node.js, nos permite llevar Javascript a aplicaciones en backend.
+* En 2014 con el nacimiento de HTML5 se habilita el control de multimedia, web sockets para comunicación en tiempo real entre otros.
+* Para el 2015 nace ECMAScript 6, que adhiere muchos elementos de programación orientada a objetos y facilita la programación asíncrona.
 
 #### Variables
 
