@@ -133,31 +133,44 @@ Tipos:
 
 #### Condicionales
 
-```ruby
-class Author < ActiveRecord::Base
-	has_many :articles
-	has_one :personal_information
-	
-	delegate  :name,
-	          :birthdate,
-	          :gender,
-	          :city,
-	          :last_name,
-	          to: :personal_information
-end
+```javascript
+// if
 
-class Article < ActiveRecord::Base
-	belongs_to :author
-	
-	delegate  :name,
-	          :birthdate,
-	          :gender,
-	          :city,
-	          :last_name,
-	          to: :author,
-	          prefix: true
+if (10 > 5) {
+   alert('yay');
+}
 
-end
+// if else
+
+if ('hola' === "alo") {
+  alert('yay');
+} else {
+  alert('nay');
+}
+
+// if else elsif
+
+if ('hola' == 'alo') {
+  alert('alo');
+} else if ('hola' == 'hola') {
+  alert('hola');
+} else {
+  alert('last condition');
+}
+
+// switch
+var name = 'juan';
+
+switch name {
+    case 'hugo':
+    	alert('found hugo');
+        break;
+    case 'paco':
+    	alert('found paco');
+        break;
+    default:
+    	alert('not found!');
+}
 ```
 
 ### Ciclos
