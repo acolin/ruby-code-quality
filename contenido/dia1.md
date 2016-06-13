@@ -206,10 +206,22 @@ function sayHi() {
   alert('hi');
 }
 
+sayHi();
+
 // Con parametros y retorno
 function plusTen(number) {
   return number + 10;
 }
+
+plusTen(11);
+// Modificando un parametro externo
+var total;
+
+function calculateTotal() {
+  total = 1500;
+}
+
+calculateTotal();
 ```
 
 #### Referencias
