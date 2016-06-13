@@ -2,7 +2,7 @@
 
 Conociendo Javascript y sus técnicas básicas de programación
 
-![Javascript](http://3.bp.blogspot.com/-PTty3CfTGnA/TpZOEjTQ_WI/AAAAAAAAAeo/KeKt_D5X2xo/s1600/js.jpg)
+![Javascript](http://gregfranko.com/images/JavaScript-logo-small.png)
 
 ### Topics
 
