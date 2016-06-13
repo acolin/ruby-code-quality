@@ -200,12 +200,13 @@ for (i = 0; i < 5; i++) {
 ### Funciones
 
 ```javascript
-var total;
 
-function calculateTotal() {
-  total = 10;
+// Sin parametros
+function sayHi() {
+  alert('hi');
 }
 
+// Con parametros
 function plusTen(number) {
   return number + 10;
 }
@@ -213,6 +214,4 @@ function plusTen(number) {
 
 #### Referencias
 
-- [https://en.wikipedia.org/wiki/Decorator_pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
-- [https://github.com/drapergem/draper](https://github.com/drapergem/draper)
-- [http://railscasts.com/episodes/286-draper](http://railscasts.com/episodes/286-draper)
+- [Eloquent Javascript](http://eloquentjavascript.net/)
