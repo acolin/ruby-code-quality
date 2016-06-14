@@ -6,7 +6,7 @@ Manipulando el DOM para agregar dinamísmo a nuestras apps
 
 ### Temas
 
-* [¿Qué es el DOM?](#que-es-el-dom)
+* [¿Qué es el DOM?](#¿qué-es-el-dom?)
 * [jQuery](#jquery)
 * [Selectores](#selectores)
 * [Manipulando contenido](#manipulando-contendio)
