@@ -296,7 +296,6 @@ Nos permite realizar peticiones a servicios externos sin la necesidad de refresc
   $(function(){
     $.get( "https://api.fixer.io/latest", function(data) {
       $( "#result" ).html(data.rates['MXN']);
-      alert("Load was performed.");
     });
   });
 </script>
