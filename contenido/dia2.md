@@ -125,4 +125,4 @@ Es la forma más básica de abstracción y reutilización de nuestro código.
 
 #### Referencias
 
-- [Eloquent Javascript](http://eloquentjavascript.net/)
+- [jQuery manipulación del DOM](https://api.jquery.com/category/manipulation/)
