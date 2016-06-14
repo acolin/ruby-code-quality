@@ -173,7 +173,53 @@ Sibling to form: <input name="none">
 #### Manipulando contenido
 Proveen una forma sencilla de agregar, remover contenido a los elementos previamente seleccionados
 
-```javascript
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<!-- cargando jQuery desde un CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<p>Soy un elemento párrafo</p>
+
+<div id='money'><span class='currency'>$</span>10.00</div>
+
+<ul id='numbers-list' class='list'>
+  <li>uno</li>
+  <li>dos</li>
+</ul>
+
+<p>Otro párrafo</p>
+
+<form>
+  <div>Form is surrounded by the green border.</div>
+ 
+  <label for="name">Child of form:</label>
+  <input name="name" id="name">
+</form>
+
+<script>
+  $(function(){
+    // agregar contenido html dentro de un elemento
+    $('p').html('10.00 <span class="currency">MXN</span>');
+    // agregar contenido tipo texto a un elemento
+    $('form label:first-child').text('The first label:');
+    // obtener el valor seleccionado de un elemento
+    $('#name').val();
+    // agregar contenido después de un elemento
+    $('#numbers-list').after("<ul id='fruits-list'><li>Mango</li><li>Sandía</li></ul>");
+    // agregar contenido antes de un elemento
+    $('#numbers-list').after("<ul id='names-list'><li>Juan</li><li>Pedro</li></ul>");
+    // remueve el elemento seleccionado
+    $('p').remove();
+    // reemplaza los elementos seleccionados con el contenido dado
+    $('#numbers-list ul:last-child').replaceWith('<ul>Tres</ul>');
+  });
+</script>
+</body>
+</html>
 ```
 
 #### Eventos
