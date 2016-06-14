@@ -124,5 +124,9 @@ Es la forma más básica de abstracción y reutilización de nuestro código.
 ```
 
 #### Referencias
-
-- [jQuery manipulación del DOM](https://api.jquery.com/category/manipulation/)
+- [Manipulación básica directa del DOM](http://callmenick.com/post/basics-javascript-dom-manipulation)
+- [jQuery manipulación de contenido](https://api.jquery.com/category/manipulation/)
+- [jQuery selectores](https://api.jquery.com/category/selectors/)
+- [jQuery eventos](https://api.jquery.com/category/events/)
+- [jQuery ajax](https://api.jquery.com/category/ajax/)
+- [jQuery manipulación de CSS](https://api.jquery.com/category/css/)
