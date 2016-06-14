@@ -1,4 +1,4 @@
-# Intro a Javascript
+# jQuery: Manipulación del DOM
 
 Conociendo Javascript y sus técnicas básicas de programación
 
