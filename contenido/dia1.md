@@ -30,22 +30,17 @@ Conociendo Javascript y sus técnicas básicas de programación
 
 ```html
 <!-- INLINE: Se coloca dentro de las etiquetas y se activa cuando suceden ciertos eventos -->
-<input type="button" id="hello" value="Hello" onClick = "window.alert('Hello World!')">
-
-<input type="button" id="hello" value="Hello" onClick = "document.write('<center><h1>Hello World!</h1></center>')">
+<input type="button" id="hello" value="Hello" onClick = "alert('Hello World!')">
 
 <!-- INTERNAL: Se coloca dentro de la etiqueta script -->
-<script language="JavaScript">	
-  document.write("<h2>This document was last modified " + document.lastModified + "</h2>");
+<script>
+  alert('hello world');
 </script>
 
 <!-- EXTERNAL: Contenido en archivos externos y referenciado en el HTML -->
 <!-- Dentro de un archivo llamado external.js -->
-function printCurrentDate() {
-    var currentDate = new Date();
-    var localDate = currentDate.toLocaleString();
-    var strToday = localDate.substring(0,40);
-    document.write("<blockquote><h2>Today is " + strToday + "</h2></blockquote>");
+function sayHi() {
+  alert('hello everybody');
 }
 
 <!-- En un archivo HTML -->
@@ -58,7 +53,7 @@ function printCurrentDate() {
 <body>
 
 <script>
-  printCurrentDate();
+  sayHi();
 </script>
 </body>
 </html>
