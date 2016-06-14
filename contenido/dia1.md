@@ -25,6 +25,45 @@ Conociendo Javascript y sus técnicas básicas de programación
 * En 2014 con el nacimiento de HTML5 se habilita el control de multimedia, web sockets para comunicación en tiempo real entre otros.
 * Para el 2015 nace ECMAScript 6, que adhiere muchos elementos de programación orientada a objetos y facilita la programación asíncrona.
 
+
+#### Inline, Internal, External - Formas de incluir Javascript en dentro del HTML
+
+```html
+<!-- INLINE: Se coloca dentro de las etiquetas y se activa cuando suceden ciertos eventos -->
+<input type="button" id="hello" value="Hello" onClick = "window.alert('Hello World!')">
+
+<input type="button" id="hello" value="Hello" onClick = "document.write('<center><h1>Hello World!</h1></center>')">
+
+<!-- INTERNAL: Se coloca dentro de la etiqueta script -->
+<script language="JavaScript">	
+  document.write("<h2>This document was last modified " + document.lastModified + "</h2>");
+</script>
+
+<!-- EXTERNAL: Contenido en archivos externos y referenciado en el HTML -->
+<!-- In a file called external.js -->
+function printCurrentDate() {
+    var currentDate = new Date();
+    var localDate = currentDate.toLocaleString();
+    var strToday = localDate.substring(0,40);
+    document.write("<blockquote><h2>Today is " + strToday + "</h2></blockquote>");
+}
+
+<!-- En un archivo HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script language="javascript" src="path/to/externaljs.js"></script>
+</head>
+<body>
+
+<script>
+  printCurrentDate();
+</script>
+</body>
+</html>
+```
+
 #### Variables
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
