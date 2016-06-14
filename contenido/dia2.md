@@ -1,8 +1,8 @@
 # jQuery: Manipulación del DOM
 
-Conociendo Javascript y sus técnicas básicas de programación
+Manipulando el DOM para agregar dinamísmo a nuestras apps
 
-![Javascript](http://gregfranko.com/images/JavaScript-logo-small.png)
+![jQuery](http://www.ics.hawaii.edu/wp-content/uploads/2013/08/jquerylogo320.png)
 
 ### Temas
 
