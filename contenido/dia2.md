@@ -225,7 +225,57 @@ Proveen una forma sencilla de agregar, remover contenido a los elementos previam
 #### Eventos
 Proveen un medio para detectar eventos como un click, on hover, entre otros y de esta forma ejecutar acciones
 
+Tipos:
+* eventos del mouse
+* eventos del teclado
+* eventos de las formas
+* event handlers
+
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<!-- cargando jQuery desde un CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<p>Soy un elemento párrafo</p>
+
+<a href='#' id='link' >Click me</a>
+
+<ul id='numbers-list' class='list'>
+  <li>uno</li>
+  <li>dos</li>
+</ul>
+
+<form>
+  <div>Form is surrounded by the green border.</div>
+ 
+  <label for="name">Child of form:</label>
+  <input name="name" id="name">
+</form>
+
+<script>
+  $(function(){
+    // Se utiliza normalmente el evento handler .on seguido del nombre del evento
+    $('#link').on('click', function(event){
+      alert('link was clicked');
+      event.preventDefault();
+    });
+  
+    $('#link').on('hover', function(event){
+      alert('link was hover');
+    });
+  
+    $('form').on('submit', function(event){
+      alert('form submited');
+      event.preventDefault();
+    });
+  });
+</script>
+</body>
+</html>
 ```
 
 #### Ajax
