@@ -6,26 +6,22 @@ Manipulando el DOM para agregar dinamísmo a nuestras apps
 
 ### Temas
 
-* [Historia de Javascript](#historia-de-javascript)
-* [Variables](#variables)
-* [Operadores](#operadores)
-* [Condicionales](#condicionales)
-* [Ciclos](#ciclos)
-* [Funciones](#funciones)
+* [¿Qué es el DOM?](#que-es-el-dom)
+* [jQuery](#jquery)
+* [Selectores](#selectores)
+* [Manipulando contenido](#manipulando-contendio)
+* [Eventos](#eventos)
+* [Ajax](#ajax)
 
 --
 
-### Historia de Javascript
+### ¿Qué es el DOM?
 
-* Creado por Brendan Eich en 1995, en tan solo 10 días, en ese entonces trabajaba en Netscape ahora en Mozilla.
-* Para 1997 Javascript fue llevado a ECMA para crear un estándar de tal forma que los otros browsers pudieran utilizarlo.
-* A través de un paper de Jesse James Garrett nace Ajax, un conjunto de tecnologías que permite cargar información sin la necesidad de un 'full page reload', gracias a esto surgen librerias como Prototype, jQuery, Dojo & Mootools.
-* En 2009 surge ECMAScript 5 conocido como Harmony, actual estándar en los browsers.
-* Para 2009 nace Node.js, nos permite llevar Javascript a aplicaciones en backend.
-* En 2014 con el nacimiento de HTML5 se habilita el control de multimedia, web sockets para comunicación en tiempo real entre otros.
-* Para el 2015 nace ECMAScript 6, que adhiere muchos elementos de programación orientada a objetos y facilita la programación asíncrona.
+El Modelo de Objetos del Documento (DOM) es una interfaz de programación de aplicaciones (API) para documentos HTML y XML. Define la estructura lógica de los documentos y el modo en que se accede y manipula un documento. En la especificación del DOM, el término "documento" se utiliza en un sentido amplio.
 
-#### Variables
+![DOM](http://www.w3schools.com/js/pic_htmltree.gif)
+
+#### jQuery
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
 
@@ -81,7 +77,7 @@ var myArr = [
 ];
 ```
 
-#### Operadores
+#### Selectores
 
 ##### Aritméticos
 
@@ -131,7 +127,7 @@ Tipos:
 
 ```
 
-#### Condicionales
+#### Manipulando contenido
 Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros programas.
 
 ```javascript
@@ -174,7 +170,7 @@ switch name {
 }
 ```
 
-### Ciclos
+### Eventos
 Nos ayudan a realizar operaciones repetitivas sobre sets de datos.
 
 ```javascript
@@ -199,7 +195,7 @@ for (i = 0; i < 5; i++) {
 }
 ```
 
-### Funciones
+### Ajax
 Es la forma más básica de abstracción y reutilización de nuestro código.
 
 ```javascript
