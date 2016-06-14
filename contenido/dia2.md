@@ -120,8 +120,23 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
 </ul>
 
 <p>Otro párrafo</p>
+
+<form>
+  <div>Form is surrounded by the green border.</div>
+ 
+  <label for="name">Child of form:</label>
+  <input name="name" id="name">
+ 
+  <fieldset>
+    <label for="newsletter">Grandchild of form, child of fieldset:</label>
+    <input name="newsletter" id="newsletter">
+  </fieldset>
+</form>
+Sibling to form: <input name="none">
+
 <script>
   $(function(){
+    // BÁSICOS
     // seleccionar un elemento via su id
     var moneyDiv = $('#money');
     // seleccionar elementos via su clase
@@ -130,6 +145,23 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
     var allULs = $('p');
     // con multiples selectores
     var currencySpan = $('div, span.currency');
+    
+    // CON ATRIBUTOS
+    // seleccionar los elementos que tiene un atributo
+    var withType = $('[type]');
+    var withBrand = $('[data-brand]');
+    
+    // FORMAS
+    var buttons = $(':button');
+    var inputs = $(':input');
+    var textInputs = $(':text');
+    var selectedOptions = $(':selected');
+    
+    // JERARQUÍAS
+    // selecciona los hijos inmediatos
+    var children = $('form > label');
+    // selecciona todos los descendientes
+    var descendants = $('form input');
   });
 </script>
 </body>
