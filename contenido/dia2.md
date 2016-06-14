@@ -282,6 +282,26 @@ Tipos:
 Nos permite realizar peticiones a servicios externos sin la necesidad de refrescar el navegador
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<!-- cargando jQuery desde un CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<div id='result'></div>
+
+<script>
+  $(function(){
+    $.get( "https://api.fixer.io/latest", function(data) {
+      $( "#result" ).html(data.rates['MXN']);
+      alert("Load was performed.");
+});
+  });
+</script>
+</body>
+</html>
 ```
 
 #### Referencias
