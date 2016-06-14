@@ -33,7 +33,38 @@ El Modelo de Objetos del Documento (DOM) es una interfaz de programación de apl
 
 #### Manipilación directa del DOM
 
-```html
+```javascript
+// Creando elementos
+var element = document.createElement(tagName);
+
+// Agregando stilos al elemento creado
+element.style.color = "#ff3300";
+element.style.marginTop = "30px";
+element.style.paddingBottom = "30px";
+
+// Obteniendo el contenido de un elemento
+var content = element.innerHTML;
+// Agregando el contenido a un elemento
+otherElement.innterHTML = content;
+
+// Obteniendo el nombre de la clase
+var cName = element.className;
+// Agregando el nombre de la clase
+otherElement.className = cName;
+
+// Obteniendo el valor del atributo id
+var idStr = element.id;
+// Agregando el valor del atributo id
+otherElement.id = idStr;
+
+// Obteniendo un elemento via su id
+element = document.getElementById(id);
+// Obteniendo los elementos que contenga una clase
+elements = document.getElementsByClassName(names); // or:
+elements = rootElement.getElementsByClassName(names);
+
+// Obteniedo los elementos por el nombre de la etiqueta
+var elements = document.getElementsByTagName(name);
 ```
 
 ### jQuery
