@@ -223,15 +223,15 @@ Proveen una forma sencilla de agregar, remover contenido a los elementos previam
 ```
 
 #### Eventos
-Nos ayudan a realizar operaciones repetitivas sobre sets de datos.
+Proveen un medio para detectar eventos como un click, on hover, entre otros y de esta forma ejecutar acciones
 
-```javascript
+```html
 ```
 
 #### Ajax
-Es la forma más básica de abstracción y reutilización de nuestro código.
+Nos permite realizar peticiones a servicios externos sin la necesidad de refrescar el navegador
 
-```javascript
+```html
 ```
 
 #### Referencias
