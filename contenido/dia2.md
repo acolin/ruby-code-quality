@@ -17,7 +17,7 @@ Manipulando el DOM para agregar dinamísmo a nuestras apps
 
 ### ¿Qué es el DOM?
 
-Define la estructura lógica de los documentos y el modo en que se accede y manipula un documento.
+Define la estructura lógica de los documentos y el modo en que se accede y manipulan.
 
 ![DOM](http://www.w3schools.com/js/pic_htmltree.gif)
 
