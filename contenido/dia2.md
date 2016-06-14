@@ -40,11 +40,13 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
   // Espera a que el elemento document esté listo
   $(document).ready(function(){
     // Tu código aquí
+    console.log('el documento está listo');
   });
   
   // Una forma más corta que hace lo mismo
   $(function(){
     // Tu código aquí
+    console.log('el documento está listo');
   });
 </script>
 </body>
