@@ -26,24 +26,25 @@ El Modelo de Objetos del Documento (DOM) es una interfaz de programación de apl
 jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a los elementos del DOM, los efectos, interactuar con los documentos HTML, desarrollar animaciones y agregar interacción con la tecnología AJAX a páginas web.
 
 ```html
+<!-- Preparándonos para usar jQuery -->
 <!DOCTYPE html>
 <html>
 <head>
 <title>My page</title>
-<!-- loading javascript from CDN -->
+<!-- cargando jQuery desde un CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
 
 <script>
-  // Wait for the html document to be ready
+  // Espera a que el elemento document esté listo
   $(document).ready(function(){
-    // Your code goes here
+    // Tu código aquí
   });
   
-  // Quicker wait to wait for the document to be ready
+  // Una forma más corta que hace lo mismo
   $(function(){
-    // Your code goes here
+    // Tu código aquí
   });
 </script>
 </body>
@@ -52,51 +53,7 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
 
 #### Selectores
 
-##### Aritméticos
-
 ```javascript
-/**
-Tipos:
-  + (suma)
-  - (resta)
-  / (división)
-  * (multiplicación)
-  % (residuo/mod)
-**/
-
-100 + 10 * 20;
-10 / 20 - 5;
-10 / 20 * 5;
-20 % 2;
-
-// Agrupar para definir precedencias
-(100 + 10) * 20;
-10 / (20 - 5);
-```
-
-#### Booleanos
-```javascript
-/**
-Tipos:
-  > (mayor que)
-  < (menor que)
-  >= (mayor igual)
-  <= (menor igual)
-  == (igual valor)
-  === (igual valor y tipo)
-  ! (negación)
-  != (diferente valor)
-  !== (diferente valor y tipo)
-  && (and)
-  || (or)
-**/
-
-10 > 5;
-10.5 < 30;
-50 >= '50';
-!false && true;
-'10' === 10;
-10 <= 5 || !true && false;
 
 ```
 
@@ -104,96 +61,18 @@ Tipos:
 Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros programas.
 
 ```javascript
-// if
-
-if (10 > 5) {
-   alert('yay');
-}
-
-// if else
-
-if ('hola' === "alo") {
-  alert('yay');
-} else {
-  alert('nay');
-}
-
-// if else elsif
-
-if ('hola' == 'alo') {
-  alert('alo');
-} else if ('hola' == 'hola') {
-  alert('hola');
-} else {
-  alert('last condition');
-}
-
-// switch
-var name = 'juan';
-
-switch name {
-    case 'hugo':
-    	alert('found hugo');
-        break;
-    case 'paco':
-    	alert('found paco');
-        break;
-    default:
-    	alert('not found!');
-}
 ```
 
 ### Eventos
 Nos ayudan a realizar operaciones repetitivas sobre sets de datos.
 
 ```javascript
-// While
-var i = 0;
-while (i < 10) {
-    console.log("The number is " + i);
-    i++;
-}
-
-// Do While
-var i = 0;
-do {
-    console.log("The number is " + i);
-    i++;
-}
-while (i < 10);
-
-// For
-for (i = 0; i < 5; i++) {
-    console.log("The number is " + i);
-}
 ```
 
 ### Ajax
 Es la forma más básica de abstracción y reutilización de nuestro código.
 
 ```javascript
-// Sin parametros, sin retorno
-function sayHi() {
-  alert('hi');
-}
-
-sayHi();
-
-// Con parametros y retorno
-function plusTen(number) {
-  return number + 10;
-}
-
-plusTen(11);
-
-// Modificando un parametro externo
-var total;
-
-function calculateTotal() {
-  total = 1500;
-}
-
-calculateTotal();
 ```
 
 #### Referencias
