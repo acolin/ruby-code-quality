@@ -127,7 +127,7 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
     // seleccionar elementos via su clase
     var allLists = $('.list');
     // seleccionar por nombre de etiqueta
-    var allULs = $('ul');
+    var allULs = $('p');
     // con multiples selectores
     var currencySpan = $('div, span.currency');
   });
