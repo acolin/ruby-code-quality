@@ -170,13 +170,11 @@ Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros progr
 
 ```javascript
 // if
-
 if (10 > 5) {
    alert('yay');
 }
 
 // if else
-
 if ('hola' === "alo") {
   alert('yay');
 } else {
@@ -184,7 +182,6 @@ if ('hola' === "alo") {
 }
 
 // if else elsif
-
 if ('hola' == 'alo') {
   alert('alo');
 } else if ('hola' == 'hola') {
