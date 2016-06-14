@@ -40,7 +40,7 @@ Conociendo Javascript y sus técnicas básicas de programación
 </script>
 
 <!-- EXTERNAL: Contenido en archivos externos y referenciado en el HTML -->
-<!-- In a file called external.js -->
+<!-- Dentro de un archivo llamado external.js -->
 function printCurrentDate() {
     var currentDate = new Date();
     var localDate = currentDate.toLocaleString();
