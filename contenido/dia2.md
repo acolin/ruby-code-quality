@@ -17,7 +17,7 @@ Manipulando el DOM para agregar dinamísmo a nuestras apps
 
 ### ¿Qué es el DOM?
 
-El Modelo de Objetos del Documento (DOM) es una interfaz de programación de aplicaciones (API) para documentos HTML y XML. Define la estructura lógica de los documentos y el modo en que se accede y manipula un documento. En la especificación del DOM, el término "documento" se utiliza en un sentido amplio.
+Define la estructura lógica de los documentos y el modo en que se accede y manipula un documento.
 
 ![DOM](http://www.w3schools.com/js/pic_htmltree.gif)
 
@@ -100,6 +100,7 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
 ```
 
 #### Selectores
+Proveen una interfaz sencilla para seleccionar cualquier elemento dentro del DOM
 
 ```html
 <!DOCTYPE html>
@@ -170,7 +171,7 @@ Sibling to form: <input name="none">
 ```
 
 #### Manipulando contenido
-Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros programas.
+Proveen una forma sencilla de agregar, remover contenido a los elementos previamente seleccionados
 
 ```javascript
 ```
