@@ -23,58 +23,31 @@ El Modelo de Objetos del Documento (DOM) es una interfaz de programación de apl
 
 #### jQuery
 
-En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
+jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a los elementos del DOM, los efectos, interactuar con los documentos HTML, desarrollar animaciones y agregar interacción con la tecnología AJAX a páginas web.
 
-```javascript
-// Declaración básica de una variable
-var email;
-var totalCost;
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<!-- loading javascript from CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
 
-// Declaración y asignación
-var email = 'rodriguezcolin@gmail.com';
-var totalCost = 150.10;
-
-/**
-Tipos de Variables:
-  null
-  undefined
-  boolean (true, false)
-  number (1, 2.1, 2.20)
-  string ('my name', "my name")
-  object ( { name: 'juan', email: 'ramirez' } )
-  array [1, 'hello', false]
-**/
-
-// null & undefined
-var imUndefined;
-var imNull = null;
-
-// booleans
-var imTrue = true;
-var imFalse = false;
-
-// numbers
-var imANumber = 2;
-var imANumberToo = 10.40;
-
-// strings
-var imAString = 'Im a string';
-var imAStringToo = "Im a string";
-
-// objects
-var imAnObject = {
-  name: 'Juan',
-  email: 'juan@gmail.com',
-  age: 15,
-  iKnowJS: false
-};
-
-// arrays
-var myArr = [
-  1,
-  'hello',
-  false
-];
+<script>
+  // Wait for the html document to be ready
+  $(document).ready(function(){
+    // Your code goes here
+  });
+  
+  // Quicker wait to wait for the document to be ready
+  $(function(){
+    // Your code goes here
+  });
+</script>
+</body>
+</html>
 ```
 
 #### Selectores
