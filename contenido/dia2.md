@@ -2,7 +2,7 @@
 
 Manipulando el DOM para agregar dinamísmo a nuestras apps
 
-![jQuery](http://www.ics.hawaii.edu/wp-content/uploads/2013/08/jquerylogo320.png)
+![jQuery](https://brand.jquery.org/resources/jquery-mark-dark.gif)
 
 ### Temas
 
