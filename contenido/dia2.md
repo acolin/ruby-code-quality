@@ -101,7 +101,39 @@ jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a lo
 
 #### Selectores
 
-```javascript
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<!-- cargando jQuery desde un CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<p>Soy un elemento párrafo</p>
+
+<div id='money'><span class='currency'>$</span>10.00</div>
+
+<ul id='numbers-list' class='list'>
+  <li>uno</li>
+  <li>dos</li>
+</ul>
+
+<p>Otro párrafo</p>
+<script>
+  $(function(){
+    // seleccionar un elemento via su id
+    var moneyDiv = $('#money');
+    // seleccionar elementos via su clase
+    var allLists = $('.list');
+    // seleccionar por nombre de etiqueta
+    var allULs = $('ul');
+    // con multiples selectores
+    var currencySpan = $('div, span.currency');
+  });
+</script>
+</body>
+</html>
 
 ```
 
