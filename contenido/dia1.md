@@ -47,8 +47,8 @@ function sayHi() {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<script language="javascript" src="path/to/externaljs.js"></script>
+ <title>Page Title</title>
+ <script language="javascript" src="path/to/externaljs.js"></script>
 </head>
 <body>
 
