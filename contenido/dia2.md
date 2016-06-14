@@ -21,7 +21,22 @@ El Modelo de Objetos del Documento (DOM) es una interfaz de programación de apl
 
 ![DOM](http://www.w3schools.com/js/pic_htmltree.gif)
 
-#### jQuery
+#### ¿Qué se puede manipular?
+
+* JavaScript puede cambiar todos los elementos HTML en la página
+* JavaScript puede cambiar todos los atributos HTML en la página
+* JavaScript puede cambiar todos los estilos CSS en la página
+* JavaScript remover elementos y atributos de HTML existentes
+* JavaScript puede agregar elementos y atributos HTML
+* JavaScript puede reaccionar a todos los eventos HTML en la página
+* JavaScript puede crear nuevos eventos HTML
+
+#### Manipilación directa del DOM
+
+```html
+```
+
+### jQuery
 
 jQuery es un framework de JavaScript para facilitar, entre otros, el acceso a los elementos del DOM, los efectos, interactuar con los documentos HTML, desarrollar animaciones y agregar interacción con la tecnología AJAX a páginas web.
 
@@ -65,13 +80,13 @@ Nos ayudan principalmente a condicionar el flujo de ejecución de nuestros progr
 ```javascript
 ```
 
-### Eventos
+#### Eventos
 Nos ayudan a realizar operaciones repetitivas sobre sets de datos.
 
 ```javascript
 ```
 
-### Ajax
+#### Ajax
 Es la forma más básica de abstracción y reutilización de nuestro código.
 
 ```javascript
