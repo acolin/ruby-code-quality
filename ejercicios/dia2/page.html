@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My page</title>
+    <!-- cargando jQuery desde un CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>This is a paragraph</p>
+    <div id='cart-total'>100.00<span>MXN</span></div>
+    <ul class='numbered-list'>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+
+    <form class="help-ticket" accept-charset="UTF-8" action="https://help.basecamp.com/bcx/tickets" enctype="multipart/form-data" id="new_ticket_form" method="post" data-form="support">
+      <input id="ticket_full_name" name="ticket[full_name]" data-support="full_name" type="hidden">
+      <input id="ticket_user_name" name="ticket[user_name]" data-support="user_name" type="hidden">
+      <input id="ticket_has_classic_account" name="ticket[has_classic_account]" data-support="has_classic_account" type="hidden">
+      <input id="ticket_source" name="ticket[source]" data-support="source" type="hidden" value="">
+
+      <div class="ticket_form">
+        <div class="help-ticket-question">
+          <h4 class="flush--top">What do you need help with? <em>—&nbsp;Required</em></h4>
+          <p>This helps us make sure you get the right answer as fast as possible.</p>
+
+          <select id="ticket_issue_type" name="ticket[issue_type]">
+            <option value="">Please select one...</option>
+            <option value="login">I can't access my account</option>
+            <option value="signup">I have a question before I sign up</option>
+            <option value="request">I want to request a feature</option>
+            <option value="billing">I have a billing question</option>
+            <option value="email">I'm not receiving emails</option>
+            <option value="confused" selected>I'm confused about how something works</option>
+            <option value="broken">I think something is broken</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="help-ticket-question">
+          <h4>What’s your question, comment, or issue? <em>—&nbsp;Required</em></h4>
+          <p>Share all the details. The more we know, the better we can help you.</p>
+
+          <textarea cols="40" id="ticket_details" name="ticket[details]" rows="20"></textarea>
+        </div>
+
+        <div class="help-ticket-question">
+          <h4>Send us a file, screenshot, or document</h4>
+          <p>Sharing a picture of what’s wrong can help us big time.</p>
+          <input id="ticket_file" name="ticket[file]" type="file">
+        </div>
+
+        <div class="help-ticket-question">
+          <h4>What’s your email address? <em>—&nbsp;Required</em></h4>
+          <p>This is where we’ll get back to you. Double check that it’s right.</p>
+          <input id="ticket_email_address" name="ticket[email_address]" data-support="email_address" placeholder="Enter your email address" size="30" type="text">
+        </div>
+
+        <div class="help-ticket-question">
+          <h4>What’s your account URL?</h4>
+          <p>Example: <code>https://basecamp.com/8675309</code></p>
+          <input id="ticket_account_url" name="ticket[account_url]" data-support="account_url" placeholder="Enter your account's web site address..." size="30" type="text">
+        </div>
+
+        <input class="button button-start" type="submit" value="Submit this support request" style="width: auto;">
+
+        <small>Expect a reply between 8am CST - 6:30pm CST Monday through Friday.</small>
+      </div>
+    </form>
+    <script>
+      $(function(){
+        // Your code goes here
+      });
+    </script>
+  </body>
+</html>
