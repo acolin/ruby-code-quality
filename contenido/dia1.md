@@ -9,7 +9,7 @@ Ruby code quality, principles, practices & techniques
 * [Naming](#naming)
 * [Functions](#functions)
 * [Exceptions](#exceptions)
-* [SOLID Principles](#solid-principles)
+* [Beyond MVC](#beyond-mvc-&-single-responsibility-principle)
 
 --
 
