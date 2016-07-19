@@ -24,6 +24,25 @@ Give meaningful names that are:
 * Method names should be phrases/verb-phrases
 * One word per concept
 
+```ruby
+# Intention revealing
+
+# Bad
+edt
+sdt
+fname
+stotal
+pup
+pts
+
+# Good
+end_datetime
+start_datetime
+first_name
+subtotal
+page_up
+points
+```
 
 ### Exceptions
 
