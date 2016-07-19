@@ -239,16 +239,21 @@ def withdraw(amount)
 end
 ```
 
-### SOLID Principles
+### Beyond MVC & Single Responsibility Principle
 
-* Single Responsibility
-* Open-Close
-* Liskov Substitution
-* Interface Segregation
-* Dependency Inversion
+* Controllers
+  * load & instantiate models
+  * parsing & whitelisting arguments
+  * security (authentication, authorization)
+  * handling response types (json, html, xml)
+* Models
+  * finder methods
+  * associations
+  * validations
+  * callbacks (only used when changing the object's properties)
+* Services
 
 ```ruby
-
 ```
 
 #### Referencias
