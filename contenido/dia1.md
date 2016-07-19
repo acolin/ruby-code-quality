@@ -17,7 +17,7 @@ Ruby code quality, principles, practices & techniques
 ### Naming
 
 
-#### Exceptions
+### Exceptions
 
 En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
 
@@ -29,7 +29,7 @@ En programación, las variables son espacios reservados en la memoria que, como 
 ```ruby
 ```
 
-#### SOLID Principles
+### SOLID Principles
 ```ruby
 ```
 
