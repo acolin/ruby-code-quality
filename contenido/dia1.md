@@ -185,6 +185,27 @@ class User
     self.password = new_password
   end
 end
+
+# Two arguments suck!
+# Avoid or convert to one argument using instance variables
+# Give your functions better names
+
+# Hard to remember gotta google it bitch!
+asserts_equal(expected, actual)
+
+# Easy to remember no need for the api
+asserts_expected_to_eq_actual(expected, actual)
+
+
+# Three arguments, AVOID AT ALL COSTS!!!
+# use argument objects
+# use argument lists
+
+# send options hash for a list html options
+def text_field_tag(name, value, html_options={}); end
+
+# convert x, y coordinates into a center object
+def make_circle(center, radius); end
 ```
 ### Exceptions
 
