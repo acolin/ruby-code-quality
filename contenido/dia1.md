@@ -1,6 +1,6 @@
 # Intro a Javascript
 
-Conociendo Javascript y sus técnicas básicas de programación
+Clean Code
 
 ![Uncle Bob](https://d26o5k45lnmm4v.cloudfront.net/authors-robert-martin-v0.jpg)
 
