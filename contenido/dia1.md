@@ -1,4 +1,4 @@
-# Intro a Javascript
+# Ruby Code Quality
 
 Clean Code
 
