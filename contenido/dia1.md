@@ -64,7 +64,6 @@ waypoints
 run
 
 ## Class Names
-
 # Should be nouns
 User
 Form
@@ -82,7 +81,6 @@ ShippingCalculator
 AccountCreator
 
 ## Method Names
-
 # Should be verbs
 invite
 authorize
@@ -105,7 +103,6 @@ signup
 
 ```ruby
 ## Should be small
-
 # Bad
 
 def total
@@ -131,7 +128,6 @@ end
 ## Avoid the use of switch statements
 
 # Bad
-
 class Payment
   attr_reader payment_method
 
@@ -153,6 +149,42 @@ class Payment
   end
 end
 
+## Have at most 3 arguments
+# Zero arguments is the winner
+# Prefer instance variables, but remember the cohesion principle:
+# all methods in a class should use most of the instance variables in that class
+
+class Signup
+  attr_accessor :email, :password, :password_confirmation
+  
+  def initialize(args={})
+    @email = args[:email]
+    @password = args[:password]
+    @password_confirmation = args[:password_confirmation]
+  end
+  
+  def call
+    begin
+      create_user
+      send_notification
+    rescue => e
+      # Rescue code goes here
+    end
+  end
+end
+
+# One argument should ask or transform not both
+class User
+  # This is asking something
+  def has_friendship_with?(another_user)
+    Friendship.exists?(self, another_user)
+  end
+
+  # This is transforming something
+  def change_password(new_password)
+    self.password = new_password
+  end
+end
 ```
 ### Exceptions
 
