@@ -25,7 +25,7 @@ Give meaningful names that are:
 * One word per concept
 
 ```ruby
-# Intention revealing
+## Intention revealing & Pronounceable
 
 # Bad
 edt
@@ -42,6 +42,58 @@ first_name
 subtotal
 page_up
 points
+
+## Distinctable, Never Duplicate
+# Bad
+info
+description
+name
+fullname
+place
+location
+run
+execute
+
+# Good
+bio
+description
+first_name
+fullname
+place
+waypoints
+run
+
+## Class Names
+
+# Should be nouns
+User
+Form
+Friend
+Invitation
+Location
+Order
+Invoice
+
+# Should be noun-phrases
+Signup
+DiscountCalculator
+TripFinder
+ShippingCalculator
+AccountCreator
+
+## Method Names
+
+# Should be verbs
+invite
+authorize
+create
+delete
+
+# Should be verb-phrases
+find_location
+send_reminder
+has_friendship_with?
+signup
 ```
 
 ### Exceptions
