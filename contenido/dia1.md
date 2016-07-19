@@ -6,12 +6,11 @@ Ruby code quality, principles, practices & techniques
 
 ### Temas
 
-* [Historia de Javascript](#historia-de-javascript)
-* [Variables](#variables)
-* [Operadores](#operadores)
-* [Condicionales](#condicionales)
-* [Ciclos](#ciclos)
-* [Funciones](#funciones)
+* [Naming](#naming)
+* [Functions](#functions)
+* [Exceptions](#exceptions)
+* [Classes](#classes)
+* [SOLID Principles](#solid-principles)
 
 --
 
