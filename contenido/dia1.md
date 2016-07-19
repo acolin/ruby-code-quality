@@ -257,5 +257,5 @@ end
   * performing a search
 
 #### Referencias
-
+- [Growing Rails](https://leanpub.com/growing-rails)
 - [Clean Code - by Uncle Bob](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
