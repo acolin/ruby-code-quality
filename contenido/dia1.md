@@ -251,7 +251,10 @@ end
   * associations
   * validations
   * callbacks (only used when changing the object's properties)
-* Services
+* Services: execute a specific task
+  * creating a user account
+  * recovering a user password
+  * performing a search
 
 ```ruby
 ```
