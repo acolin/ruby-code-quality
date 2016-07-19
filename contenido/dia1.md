@@ -43,7 +43,7 @@ subtotal
 page_up
 points
 
-## Distinctable, Never Duplicate
+## Distinctable, One Word Per Concept
 # Bad
 info
 description
@@ -95,7 +95,65 @@ send_reminder
 has_friendship_with?
 signup
 ```
+### Functions
 
+* Should be small, do 1 thing at 1 level of abstraction
+* Avoid the use of switch statements
+* Have at most 3 arguments
+* Do something or Answer something
+* Have no side effects
+
+```ruby
+## Should be small
+
+# Bad
+
+def total
+  subtotal = items.sum(:price)
+  discount = items.sum(:discount)
+
+  subtotal - discount
+end
+
+# Good
+def total
+  subtotal - discount
+end
+
+def subtotal
+  items.sum(:price)
+end
+
+def discount
+  items.sum(:discount)
+end
+
+## Avoid the use of switch statements
+
+# Bad
+
+class Payment
+  attr_reader payment_method
+
+  def process
+    case payment_method.class
+    when "CreditCart"
+    when "Deposit"
+    when "Cash"
+  end
+end
+
+# Good
+class Payment
+  attr_reader payment_method
+
+  # A switch statement hides an opportunity to use polymorphism or duck typing
+  def process
+    payment_method.purchase(self)
+  end
+end
+
+```
 ### Exceptions
 
 ```ruby
