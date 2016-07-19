@@ -1,3 +1,3 @@
-# frontend-week2
+# ruby code quality
 
-Contenido y ejercicios para la semana 2 del curso Frontend Developer
+Contenido y ejercicios para la última semana de backend development
