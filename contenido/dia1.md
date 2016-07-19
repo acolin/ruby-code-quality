@@ -9,7 +9,6 @@ Ruby code quality, principles, practices & techniques
 * [Naming](#naming)
 * [Functions](#functions)
 * [Exceptions](#exceptions)
-* [Classes](#classes)
 * [SOLID Principles](#solid-principles)
 
 --
