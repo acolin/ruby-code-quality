@@ -16,10 +16,16 @@ Ruby code quality, principles, practices & techniques
 
 ### Naming
 
+Give meaningful names that are:
+* Intention revealing
+* Pronounceable
+* Distinctable
+* Class names should be nouns/noun-verbs
+* Method names should be phrases/verb-phrases
+* One word per concept
+
 
 ### Exceptions
-
-En programación, las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa.
 
 ```ruby
 ```
