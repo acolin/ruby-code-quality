@@ -120,5 +120,30 @@ class FootballCourt
 end
 ```
 
-#### Referencias
+### Duck Typing
+
+* If it swims like a duck, quacks like a duck, then is probably a duck.
+* An interface shared among several classes
+* A class can respond to multiple interfaces
+
+```ruby
+## Container class
+class Report
+  def export_to(format = Report::PDF)
+    format.new.export(self)
+  end
+end
+
+# These are the ducks
+# Both implement the same interface
+class Report::PDF
+  def export; end
+end
+
+class Report::HTML
+  def export; end
+end
+```
+
+#### Bibliography
 - [Practical Object Oriented Design in Ruby](http://www.poodr.com/)
