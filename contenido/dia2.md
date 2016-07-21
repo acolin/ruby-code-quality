@@ -73,5 +73,52 @@ def discount
 end
 ```
 
+### Sharing Role Behavior with Modules
+
+* Used to share behavior among unrelated objects
+* Is a 'behaves like a' schedulable, authenticable, checkinable, searchable
+
+```ruby
+## Role example
+# A module giving the behavior of schedulable to any object
+module Schedulable
+    attr_writer :schedule
+
+    def schedule
+        @schedule ||= ::Schedule.new
+    end
+
+    def schedulable?(start_date, end_date)
+        !scheduled?(start_date - lead_days, end_date)
+    end
+
+    def scheduled?(start_date, end_date)
+        schedule.scheduled?(self, start_date, end_date)
+    end
+
+    # includers may override
+    def lead_days
+        0
+    end
+end
+
+# Using it
+class ClassRoom
+  include Schedulable
+
+  def lead_days
+    1   
+  end
+end
+
+class FootballCourt
+  include Schedulable
+  
+  def lead days
+    7
+  end
+end
+```
+
 #### Referencias
 - [Practical Object Oriented Design in Ruby](http://www.poodr.com/)
