@@ -71,8 +71,6 @@ end
 def discount
   items.sum(:discount)
 end
-
-#
 ```
 
 #### Referencias
