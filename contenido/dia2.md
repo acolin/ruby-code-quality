@@ -225,26 +225,79 @@ end
 
 ### Inheritance
 
-* If it swims like a duck, quacks like a duck, then is probably a duck.
-* An interface shared among several classes
-* A class can respond to multiple interfaces
+* Automatic message delegation
+* Use the template pattern
+* decouple using hook messages
 
 ```ruby
-## Container class
-class Report
-  def export_to(format = Report::PDF)
-    format.new.export(self)
+# Template Pattern
+class Paginator
+  def initialize(args = {})
+    @per_page = args.per_page || default_per_page
+    @max_pages = args.per_page || default_max_pages
+  end
+
+  # Template method, must implement in subclass
+  def paginate
+    raise NotImplementedError, "The #{self.class} must implement:"
+  end
+
+  private
+
+  # Creating default values for arguments
+  # good practice to avoid malfunction
+  def default_per_page
+    25
+  end
+
+  def default_max_pages
+    10
   end
 end
 
-# These are the ducks
-# Both implement the same interface
-class Report::PDF
-  def export; end
+class TinyPaginator < Paginator
+  def paginate
+    # Pagination code goez here...
+  end
+
+  private
+
+  def default_per_page
+    5
+  end
+
+  def default_max_pages
+    5
+  end
 end
 
-class Report::HTML
-  def export; end
+# Decoupling with hook messages
+class Bike
+  attr_reader :chain, :tire_size
+  def initialize(args = {})
+    @chain = args.chain || default_chain
+    post_initialize(args)
+  end
+
+  def spares
+    { tire_size: tire_size,
+      chain: chain }.merge(local_spares)
+  end
+
+  # Post initialize hook, avoid using the super
+  # giving specialization to the initialization
+  def post_initialize(args)
+    nil
+  end
+
+  # hook to initialize the spares
+  def local_spares
+    {}
+  end
+
+  def default_chain
+    '10-speed'
+  end
 end
 ```
 
