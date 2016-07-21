@@ -145,5 +145,108 @@ class Report::HTML
 end
 ```
 
+### Managing Dependencies
+
+* If an object changes and if forces other objects to change too
+
+```ruby
+# Find the dependencies
+class Report
+  def export
+    Report::PDF.export(self)
+  end
+end
+
+class Report::PDF
+  def self.export(self); end
+end
+
+# Solution 1: Dependency injection
+class Report
+  # Injecting the class, removing explicit class dependency
+  def export(format = Report::PDF)
+    format.export(self)
+  end
+end
+
+class Report::PDF
+  def self.export(self); end
+end
+
+# Solution 2: Isolate instance creation
+# Problem
+class Order
+  def initialize(args = {}); end
+
+  def total
+    Order::Calculator.new.calculate(self)
+  end
+end
+
+# Solution
+class Order
+  # Include the instance creation in the initializer
+  # creates the instance even if we don't need it yet
+  def initialize(args = {})
+    @calculator = Order::Calculator.new
+  end
+
+  def total
+    calculator.calculate(self)
+  end
+
+  # A Second alternative
+  # Wrap in a method, lazy loading style
+  def calculator
+    @calculator ||= Order::Calculator.new
+  end
+end
+
+# Solution 3: Remove argument order dependencies
+# Problem
+class Order
+  def initialize(customer, line_items, address); end
+
+  def total
+    Order::Calculator.new.calculate(self)
+  end
+end
+
+# Solution
+class Order
+  # Removes argument order dependency
+  def initialize(args = {}); end
+
+  def total
+    Order::Calculator.new.calculate(self)
+  end
+end
+```
+
+### Inheritance
+
+* If it swims like a duck, quacks like a duck, then is probably a duck.
+* An interface shared among several classes
+* A class can respond to multiple interfaces
+
+```ruby
+## Container class
+class Report
+  def export_to(format = Report::PDF)
+    format.new.export(self)
+  end
+end
+
+# These are the ducks
+# Both implement the same interface
+class Report::PDF
+  def export; end
+end
+
+class Report::HTML
+  def export; end
+end
+```
+
 #### Bibliography
 - [Practical Object Oriented Design in Ruby](http://www.poodr.com/)
