@@ -27,15 +27,6 @@ class Event < ActiveRecord::Base
   scope :not_over, -> { where('Date(events.end_date) = ?', DateTime.tomorrow) }
   scope :by_user, -> (user_id) { where('user_id = ? ', user_id).select { |e| e.active? } }
 
-  validates :name, :subdomain, :presence => true
-  validates :subdomain, :length => {:maximum => 40}
-  validates_uniqueness_of :subdomain
-  validates_exclusion_of :subdomain, :in => RESERVED_SUBDOMAINS
-  validates :logo, :file_size => {:maximum => 1.megabyte.to_i}, :on => :update, :allow_blank => true
-  validates :banner, :file_size => {:maximum => 1.megabyte.to_i}, :on => :update, :allow_blank => true
-  validates_datetime :end_date, :after => :start_date, :on => :update, :allow_blank => true
-  validates :capacity, numericality: {greater_than: 0, allow_blank: true}
-
   after_create :send_new_event_notification
 
   class << self
