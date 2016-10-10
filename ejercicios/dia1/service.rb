@@ -17,6 +17,7 @@ class CreateAccount
       true
     rescue => e
       errors.add(:base, 'There was a problem with the db, please try again later.')
+      false
     end
   end
   
