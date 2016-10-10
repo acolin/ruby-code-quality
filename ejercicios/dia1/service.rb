@@ -8,17 +8,10 @@ class CreateAccount
   def call
     return false unless valid?
     
-    begin
-      ActiveRecord::Base.transaction do
-        create_user
-        create_location
-      end
-      send_welcome_notification
-      true
-    rescue => e
-      errors.add(:base, 'There was a problem with the db, please try again later.')
-      false
-    end
+    create_user
+    create_location
+    send_welcome_notification
+    true
   end
   
   private
