@@ -1,7 +1,7 @@
 class CreateAccount
   include ActiveModel::Model
   attr_accessor :email, :fullname, :address1, :city
-  attr_accessor :user, :location
+  attr_reader :user, :location
   
   validates :email, :fullname, :address1, :city, presence: true
   
