@@ -5,7 +5,7 @@ class CreateAccount
   
   validates :email, :fullname, :address1, :city, presence: true
   
-  def call
+  def persist!
     return false unless valid?
     
     create_user
