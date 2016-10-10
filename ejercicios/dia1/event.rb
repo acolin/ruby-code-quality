@@ -1,11 +1,5 @@
 class Event < ActiveRecord::Base
   RESERVED_SUBDOMAINS = %w( www  ftp mail api assets blog admin calendar )
-  attr_accessible :name, :subdomain, :about, :start_date, :end_date, :time_zone, :logo,
-                  :banner, :logo_cache, :banner_cache, :preferred_currency, :preferred_name_is_visible,
-                  :remove_logo, :registration_open, :capacity, :event_type, :activated_at, :private
-
-  attr_accessible :location_attributes, :sponsors_attributes, :contact_attributes
-  attr_accessible :preferred_name_is_visible, :preferred_currency, :preferred_fee_breakdown
 
   belongs_to :owner, :foreign_key => 'user_id', :class_name => 'User', counter_cache: true
   belongs_to :venue
@@ -94,7 +88,7 @@ class Event < ActiveRecord::Base
     available_tickets.empty? && bookings.pending.any?
   end
 
-  # Gets the event full subdomain i.e. my-event.boletia.com
+  # Gets the event full subdomain
   def url
     uri = URI(Settings.app_host)
     '%s://%s.%s' % [uri.scheme, self.subdomain, uri.host]
@@ -134,7 +128,7 @@ class Event < ActiveRecord::Base
   private
 
   def available_tickets
-    available_tickets ||= Boletia::TicketsAvailability::ForEvent.new(event_id: id).call
+    available_tickets ||= MyApp::TicketsAvailability::ForEvent.new(event_id: id).call
   end
 
   def has_paid_tickets_and_no_payment_method?(current_user = nil)
